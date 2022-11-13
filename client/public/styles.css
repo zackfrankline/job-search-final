@@ -73,7 +73,21 @@ footer p {
   outline: none;
 }
 
-form {
+.input{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color:rgb(196, 196, 196) ;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.input .save{
+  font-family: inherit;
+}
+
+form{
+  justify-content: center;
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;
@@ -96,6 +110,7 @@ form button {
   position: absolute;
   right: 18px;
   bottom: -18px;
+  font-family:inherit;
   /* background: #f5ba13; */
   background-color: #06283D;
   color: #fff;
@@ -107,6 +122,21 @@ form button {
   cursor: pointer;
   outline: none;
 }
+
+.save{
+  justify-content: flex-end;
+  background-color: #06283D;
+  color: #fff;
+  border: none;
+  border-radius: 30%;
+  width: 87px;
+  height: 42px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+
+
 
 .container{
   display: flex;

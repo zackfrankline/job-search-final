@@ -1,4 +1,20 @@
+
+import Axios from "axios"
+
 const Job=(props)=>{
+
+
+    async function handleSave(){
+
+      try{
+
+        Axios.post("http://localhost:3500/job-save",{props})
+
+      }
+      catch(err){
+        console.log(err)
+      }
+    }
 
     return (
          <div class="note">
@@ -11,6 +27,7 @@ const Job=(props)=>{
                 <p>
                   {props.location}
                 </p>
+                <button onClick={handleSave}>Save</button>
          </div>
             
     )
